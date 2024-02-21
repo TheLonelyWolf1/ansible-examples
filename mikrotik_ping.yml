@@ -1,6 +1,6 @@
 ---
 
 - hosts: mikrotik
-  remote_user: admin
+  gather_facts: no
   tasks:
     - ansible.builtin.ping:
