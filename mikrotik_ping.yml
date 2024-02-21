@@ -1,7 +1,11 @@
 ---
 
-- name: RouterOS test with network_cli connection
+- name: RouterOS test
   hosts: mikrotik
+  connection: network_cli
+  vars:
+    ansible_network_os: routeros
+    ansible_user: admin
   gather_facts: false
   tasks:
 
