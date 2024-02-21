@@ -1,6 +1,7 @@
 ---
 
 - hosts: mikrotik
-  ansible_become_user: admin 
+  ansible_become_user: admin
+  ansible_become_password: admin
   tasks:
     - ansible.builtin.ping:
