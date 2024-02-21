@@ -1,6 +1,6 @@
 ---
 - name: Update packages on Ubuntu hosts
-  hosts: all
+  hosts: ubuntu
   gather_facts: false
 
   tasks:
